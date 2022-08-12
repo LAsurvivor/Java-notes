@@ -88,39 +88,44 @@
 16. JVM是什么？
 17. JVM的内存管理模型？其中哪些是线程独占的？
 18. GC机制有哪些？
-19. cms和G1的区别？
-20. Java设计模式有哪些？（单例模式/适配器模式/模板模式/装饰器模式/代理模式/工厂模式）
-21. 单例怎么实现？画图、手写双重检验锁单例（饿汉/懒汉/双重检验/volatile）
-22. 双重检验为什么需要加volatile？（防止指令重排）
-23. 有什么和双重检验等效的单例写法？
-24. 如何让用户只能调用类的方法创建实例而不是通过new创建实例？（构造函数加private）
-25. 为什么要双重检验
-26. 双重检验锁定有哪些缺陷？
-27. 享元模式/工厂/适配的理解
-28. synchronized底层实现？JDK1.6前后对synchronized实现的变化？
-29. synchronized(this)和synchronized(classname.class)的区别
-30. ReentrantLock的底层实现原理？(AQS/CAS)
-31. synchronized和ReentrantLock的区别
-32. Java有哪两种流？（字符流和字节流）
-33. Java IO有哪些？（同步阻塞BIO/同步非阻塞NIO/异步非阻塞AIO）
-34. 什么情况下会发生阻塞？
-35. 多路复用有哪些系统调用？实现原理？（select/pselect/poll/epoll）
-36. netty是否了解？
-37. wait和sleep的区别
-38. 实现双线程的线程唤醒（Condition的signal和await）
-39. Java concurrent包用过什么？
-40. ConcurrentHashMap如何实现？
-41. ConcurrentHashMap和SynchronizedHashMap的区别
-42. 可重入锁和不可重入锁的理解
-43. volatile/CAS/AQS的理解
-44. volatile的底层实现？volatile是不是原子性的？volatile的有序性如何保障？
-45. Java在哪个阶段做了原子指令重排？
-46. final/finally/finalize分别是什么？
-47. ==和equals的区别
-48. 静态代理和动态代理的理解
-49. 泛型的理解
-50. 常见的异常类有哪些？
-51. Integer和int的区别
+19. cms和G1的区别？优缺点？
+20. fullgc怎么排查？（dump->MAT)
+21. 怎样fullgc？
+22. fullgc的原因
+23. 新生代内部划分（Eden/Survivor1/Survivor2）
+24. 永久代和metaspace的区别
+25. Java设计模式有哪些？（单例模式/适配器模式/模板模式/装饰器模式/代理模式/工厂模式）
+26. 单例怎么实现？画图、手写双重检验锁单例（饿汉/懒汉/双重检验/volatile）
+27. 双重检验为什么需要加volatile？（防止指令重排）
+28. 有什么和双重检验等效的单例写法？
+29. 如何让用户只能调用类的方法创建实例而不是通过new创建实例？（构造函数加private）
+30. 为什么要双重检验
+31. 双重检验锁定有哪些缺陷？
+32. 享元模式/工厂/适配的理解
+33. synchronized底层实现？JDK1.6前后对synchronized实现的变化？
+34. synchronized(this)和synchronized(classname.class)的区别
+35. ReentrantLock的底层实现原理？(AQS/CAS)
+36. synchronized和ReentrantLock的区别
+37. Java有哪两种流？（字符流和字节流）
+38. Java IO有哪些？（同步阻塞BIO/同步非阻塞NIO/异步非阻塞AIO）
+39. 什么情况下会发生阻塞？
+40. 多路复用有哪些系统调用？实现原理？（select/pselect/poll/epoll）
+41. netty是否了解？
+42. wait和sleep的区别
+43. 实现双线程的线程唤醒（Condition的signal和await）
+44. Java concurrent包用过什么？
+45. ConcurrentHashMap如何实现？
+46. ConcurrentHashMap和SynchronizedHashMap的区别
+47. 可重入锁和不可重入锁的理解
+48. volatile/CAS/AQS的理解
+49. volatile的底层实现？volatile是不是原子性的？volatile的有序性如何保障？
+50. Java在哪个阶段做了原子指令重排？
+51. final/finally/finalize分别是什么？
+52. ==和equals的区别
+53. 静态代理和动态代理的理解
+54. 泛型的理解
+55. 常见的异常类有哪些？
+56. Integer和int的区别
 
 
 
@@ -158,8 +163,10 @@
 3. Redis的基本数据类型（跳表）
 4. Redis是单线程的吗？为什么这么设计？
 5. Redis过期键删除策略理解
-6. Kafka/RabbitMQ/RocketMQ的理解
-7. 为什么需要缓存中间件？
+6. Redis的持久化理解
+7. Kafka/RabbitMQ/RocketMQ的理解
+8. 消息队列的优缺点（优点有异步、解耦、削峰）
+9. 为什么需要缓存中间件？
 
 
 
