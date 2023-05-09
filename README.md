@@ -168,6 +168,7 @@
 7. Kafka/RabbitMQ/RocketMQ的理解
 8. 消息队列的优缺点（优点有异步、解耦、削峰）
 9. 为什么需要缓存中间件？
+10. Redis分布式锁http://kaito-kidd.com/2021/06/08/is-redis-distributed-lock-really-safe/
 
 
 
