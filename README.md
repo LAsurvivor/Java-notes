@@ -295,5 +295,6 @@
 21. 返回值优化
 22. char[]和string转化遇到的问题
 23. deque/queue的内部实现（deque取值可以o(1)复杂度）
+24. 4种cast方法
 
 
